@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencias en Tecnología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB, #4682B4);
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ff6f61, #de64b1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        img {
+            border-radius: 10px;
+            border: 4px solid #4D88FF;
+            align-items: center;
+            text-align: left;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0.5rem;
+        }
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 2px solid #555;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            color: #ff6f61;
+            transform: scale(1.05);
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            color: #333;
+            border-radius: 8px;
+            align-content: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin: 0.5rem;
+        }
+        .info-box {
+            background-color: #f4f4f4;
+            color: #333;
+            border: 2px solid #4D88FF;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            margin-top: 2rem;
+            border-top: 5px solid #4D88FF;
+        }
+        .footer-content {
+            background-color: #444;
+            border-radius: 8px;
+            padding: 1rem;
+            display: inline-block;
+            max-width: 900px;
+            width: 100%;
+        }
+        .footer-content p {
+            margin: 0.5rem 0;
+        }
+        .social-icons {
+            margin: 1rem 0;
+        }
+        .social-icons img {
+            margin: 0 0.5rem;
+            vertical-align: middle;
+        }
+    </style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+<body onLoad="MM_preloadImages('R 2,3.jpg')">
+    <header>
+        <h1>Tendencias en Tecnología</h1>
+        <p><img src="image.png" width="853" height="238" alt=""/></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pg2.html">Características</a></li>
+            <li><a href="pg3.html">Servicios</a></li> 
+            <li><a href="pg4.html">Contacto</a></li>
+            <li><a href="pg5.html">Sobre Nosotros</a></li>
+            <li><a href="#help">Centro de Ayuda</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <section id="help">
+            <h2>Centro de Ayuda</h2>
+            <p>En el Centro de Ayuda, nuestro objetivo es proporcionarte soporte y recursos para resolver tus dudas y problemas relacionados con la tecnología. A continuación, te ofrecemos información clave y pasos para obtener la asistencia que necesitas:</p>
+            <div class="image-container">
+                <img src="tecnologia-telecomunicaciones-2019.jpg" width="760" height="332" alt="Centro de Ayuda"/>
+            </div>
+            <h3>¿Cómo podemos ayudarte?</h3>
+            <p>Para ofrecerte la mejor asistencia posible, hemos organizado los siguientes recursos y pasos:</p>
+            <ol>
+                <li><strong>Preguntas Frecuentes (FAQ)</strong>: Consulta nuestra sección de preguntas frecuentes para encontrar respuestas a las dudas más comunes sobre nuestros productos y servicios.</li>
+                <li><strong>Soporte Técnico</strong>: Si necesitas ayuda con un problema técnico, por favor, contacta con nuestro equipo de soporte técnico a través del formulario en línea o por correo electrónico.</li>
+                <li><strong>Guías y Tutoriales</strong>: Explora nuestras guías y tutoriales detallados para aprender a utilizar nuestras herramientas y resolver problemas comunes.</li>
+                <li><strong>Asistencia en Vivo</strong>: Utiliza nuestro chat en vivo para recibir asistencia inmediata de uno de nuestros especialistas.</li>
+                <li><strong>Contacto Directo</strong>: Si prefieres hablar con un representante, llama a nuestro número de soporte para asistencia personalizada.</li>
+            </ol>
+          <div class="info-box">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos un equipo dedicado a la innovación y a mejorar la experiencia tecnológica de nuestros usuarios. Nuestra misión es ofrecer soluciones efectivas y actualizadas en el mundo de la tecnología. Para saber más sobre nosotros y nuestro compromiso, visita nuestra <a href="https://www.uniminuto.edu/oferta-academica/administracion-de-tecnologias-de-la-informacion">página de Sobre Nosotros</a>.</p>
+                <h3>informacion personal sobre el encargado&nbsp;&nbsp;</h3>
+                <p>Si tienes alguna consulta o necesitas asistencia, no dudes en contactarnos:</p>
+                <ul>
+                  <li><strong>Correo Electrónico:</strong> soporte@tecnologia.com</li>
+                  <li><strong>Teléfono:</strong> +57 300 123 4567</li>
+                  <li><strong>Horario de Atención:</strong> Lunes a Viernes, de 9:00 AM a 6:00 PM (Hora Local)</li>
+                  <li><strong>nombre:</strong> juan camilo fontalvo Alvarado&nbsp; </li>
+                  <li><strong>edad:</strong>16</li>
+                  <li><strong>colegio</strong><strong>:</strong>instituto educativo Tecnico pedro castro monsalvo</li>
+                  <li><strong>creado</strong><strong>:</strong>06/09/2024&nbsp; </li>
+                  <li><strong>ubicacion:&nbsp;</strong><a href="https://maps.app.goo.gl/dhXQduWY37kh8KFr7" target="new">https://maps.</a></li>
+                </ul>
+          </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://web.whatsapp.com/" target="new"><img src="R.1.png" width="64" height="48" alt="WhatsApp"/></a>
+                <a href="https://www.google.com/intl/es/gmail/about/" target="new"><img src="R (1).png" width="50" height="55" alt="Gmail"/></a>
+                <a href="https://es-la.facebook.com/" target="new"><img src="facebook-logo-1-3.png" width="51" height="42" alt="Facebook"/></a>
+            </div>
+            <p>&copy; 2024 Tendencias en Tecnología. INSTPECAM.</p>
+            <p>CESAR - COLOMBIA&nbsp;</p>
+            <p>"La tecnología no es solo una herramienta, es el puente hacia un futuro más brillante e innovador. Gracias por acompañarnos en este viaje hacia la transformación digital."&nbsp;</p>
+        </div>
+    </footer>
+</body>
+</html>

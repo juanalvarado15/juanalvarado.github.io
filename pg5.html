@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencias en Tecnología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB, #4682B4);
+            color: #3E3E3E;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ff6f61, #de64b1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0.5rem;
+        }
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 2px solid #555;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            color: #ff6f61;
+            transform: scale(1.05);
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            color: #333;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #4D88FF;
+            padding-bottom: 0.5rem;
+        }
+        .info-box {
+            border: 2px solid #4D88FF;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+        .info-box img {
+            max-width: 100%;
+            border-radius: 8px;
+            flex: 1 1 40%;
+            object-fit: cover;
+        }
+        .info-box .info-item {
+            flex: 1 1 50%;
+        }
+        .info-box .info-item h3 {
+            color: #e74c3c;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        .info-box .info-item p {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+        .info-box .info-item a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .info-box .info-item a:hover {
+            text-decoration: underline;
+        }
+        .additional-info {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 8px;
+            border: 2px solid #4D88FF;
+        }
+        .additional-info h3 {
+            margin-top: 0;
+            color: #e74c3c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        th, td {
+            border: 2px solid #4D88FF;
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4D88FF;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            margin-top: 2rem;
+            border-top: 5px solid #4D88FF;
+        }
+        .footer-content {
+            background-color: #444;
+            border-radius: 8px;
+            padding: 1rem;
+            display: inline-block;
+            max-width: 900px;
+            width: 100%;
+        }
+        .social-icons {
+            margin: 1rem 0;
+        }
+        .social-icons img {
+            margin: 0 0.5rem;
+            vertical-align: middle;
+        }
+    </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('th26,.jpg')">
+    <header>
+        <h1>Tendencias en Tecnología</h1>
+    </header>
+<nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pg2.html">Características</a></li>
+            <li><a href="pg3.html">Servicios</a></li> 
+            <li><a href="pg4.html">Contacto</a></li>
+            <li><a href="pg5.html">Sobre Nosotros</a></li>
+            <li><a href="pg6.html">Centro de Ayuda</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <blockquote>
+                        <h2>Sobre Nosotros</h2>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+            <div class="info-box">
+                <img src="OIP 1,1.jfif" alt="Evolución Tecnológica">
+                <div class="info-item">
+                    <h3>Evolución Tecnológica</h3>
+                    <p>Desde la invención de herramientas básicas hasta el desarrollo de computadoras avanzadas y la inteligencia artificial, la tecnología ha evolucionado de maneras sorprendentes. Cada etapa de la evolución tecnológica ha transformado la forma en que vivimos, trabajamos y nos comunicamos.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <img src="OIP1,2.jfif" alt="Tecnología en la Vida Diaria" width="792" height="446">
+                <div class="info-item">
+                    <h3>Tecnología en la Vida Diaria</h3>
+                    <p>Los smartphones, redes sociales y aplicaciones de mensajería han cambiado la forma en que interactuamos y nos conectamos con otros. La automatización, el teletrabajo y las herramientas digitales han revolucionado el entorno laboral. La tecnología también ha transformado el entretenimiento con el streaming y videojuegos.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <img src="OIP (1,3.jfif" alt="Impacto Social y Cultural">
+                <div class="info-item">
+                    <h3>Impacto Social y Cultural</h3>
+                    <p>La tecnología influye en nuestras formas de expresión cultural y facilita la difusión de culturas globalmente. Ha cambiado la manera en que aprendemos y ha mejorado la tecnología médica, permitiendo avances en la telemedicina y la investigación genética.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <img src="OIP1,4.jfif" alt="Desafíos y Consideraciones">
+                <div class="info-item">
+                    <h3>Desafíos y Consideraciones</h3>
+                    <p>La cantidad de datos personales que compartimos plantea preocupaciones sobre la privacidad y la seguridad. La desigualdad digital puede exacerbar las brechas entre quienes tienen acceso a la tecnología y quienes no. Además, la producción y eliminación de dispositivos electrónicos tienen un impacto ambiental.</p>
+                </div>
+            </div>
+          <div class="info-box">
+<div class="info-item">
+        <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','th26,.jpg',1)"><img src="th24,.jpg" alt="" width="474" height="283" id="Image8"></a></h3>
+        <h3>El Futuro de la Tecnología</h3>
+<p>La inteligencia artificial está en constante desarrollo y promete transformar numerosos aspectos de nuestra vida. La realidad aumentada y virtual están cambiando la forma en que experimentamos el mundo. Las discusiones sobre la ética y regulación de la tecnología también están en aumento.</p>
+                </div>
+            </div>
+            <div class="additional-info">
+                <h3>Información sobre Tecnología</h3>
+                <p>La tecnología no solo ha avanzado en términos de hardware y software, sino que también ha transformado la forma en que nos relacionamos con el mundo. Desde las primeras invenciones como la rueda hasta los avances actuales en computación cuántica, la tecnología sigue siendo una fuerza impulsora de cambio e innovación. En nuestro día a día, la tecnología facilita tareas, conecta a personas y abre nuevas oportunidades en casi todos los aspectos de la vida.</p>
+                <p>Estamos comprometidos con la divulgación de los últimos avances y tendencias tecnológicas, y nos esforzamos por proporcionar contenido valioso y accesible para nuestros lectores. Gracias por unirte a nosotros en este emocionante viaje hacia el futuro digital.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ejemplo</th>
+                        <th>Descripción</th>
+                        <th>Aplicaciones</th>
+                    </tr>
+              </thead>
+                <tbody>
+                    <tr>
+                        <td>Software</td>
+                        <td>Sistemas operativos, aplicaciones</td>
+                        <td>Windows, Android</td>
+                    </tr>
+                    <tr>
+                        <td>Hardware</td>
+                        <td>Componentes físicos</td>
+                        <td>Computadora, teléfono</td>
+                    </tr>
+                    <tr>
+                        <td>Internet</td>
+                        <td>Redes globales</td>
+                        <td>Web, correo electrónico</td>
+                    </tr>
+                </tbody>
+            </table>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://web.whatsapp.com/" target="new"><img src="R.1.png" width="64" height="48" alt="WhatsApp"/></a>
+                <a href="https://www.google.com/intl/es/gmail/about/" target="new"><img src="R (1).png" width="50" height="55" alt="Gmail"/></a>
+                <a href="https://es-la.facebook.com/" target="new"><img src="facebook-logo-1-3.png" width="51" height="42" alt="Facebook"/></a>
+            </div>
+            <p>&copy; 2024 Tendencias en Tecnología. INSTPECAM.</p>
+            <p>CESAR - COLOMBIA</p>
+            <p>"La tecnología no es solo una herramienta, es el puente hacia un futuro más brillante e innovador. Gracias por acompañarnos en este viaje hacia la transformación digital."</p>
+        </div>
+    </footer>
+</body>
+</html>
